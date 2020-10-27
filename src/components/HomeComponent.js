@@ -8,13 +8,12 @@ import {
     Tooltip,
     Legend,
     Line,
-    ComposedChart,
-    Area,
     Bar,
     BarChart,
     PieChart, Pie, Sector, Cell,
   } from "recharts";
 
+//SAMPLE DATA TO BE CHANGED LATER
 const data = [
 {
     name: "Page A",
@@ -72,6 +71,7 @@ class Home extends Component {
                 
                 {/* TOP SECTION 
                 Charts Package: https://github.com/recharts/recharts
+                Examples: http://recharts.org/en-US/examples/StraightAnglePieChart
                 */}
                 
                 <div className="container">
@@ -96,6 +96,7 @@ class Home extends Component {
 
                 {/* MIDDLE SECTION 
                 Charts Package: https://github.com/recharts/recharts
+                Examples: http://recharts.org/en-US/examples/StraightAnglePieChart
                 */}
 
                 <div className="container">
@@ -128,11 +129,17 @@ class Home extends Component {
 
                 {/* BOTTOM SECTION 
                 Twitter Package: https://www.npmjs.com/package/react-twitter-embed
+                
                 */}
 
                 <div className="container">
-                    Top Tweets
-                    <TwitterTweetEmbed tweetId={'1305899181081419782'}/>
+                    <h2>Top Tweets</h2>
+                    <div className="row">
+                        <TwitterTweetEmbed tweetId={'1305899181081419782'}/>
+                        <TwitterTweetEmbed tweetId={'1305899181081419782'}/>
+                        <TwitterTweetEmbed tweetId={'1305899181081419782'}/>
+                    </div>
+
                 </div>
                 
             </React.Fragment>
