@@ -22,7 +22,7 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar dark sticky="top" expand="md">
+                <Navbar dark sticky="top" bg="dark" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><img src="http://nabilpervez.com/wp-content/uploads/2020/02/N.png" height="30" width="30" alt="NuCamp Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
