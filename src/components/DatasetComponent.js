@@ -65,6 +65,7 @@ class Dataset extends Component {
     render() {
         return (
         <div className="container my-4">
+            <h2>Dataset</h2>
         <div style={{ maxWidth: "100%" }}>
             <MaterialTable
             columns={[
@@ -125,7 +126,7 @@ class Dataset extends Component {
                     tweets: 2100
                 },
             ]}
-            title="Twitter Dataset"
+            title="NA Esports Teams"
             />
         </div>
         </div>

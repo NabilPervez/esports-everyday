@@ -2,42 +2,28 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.card-title {
-  font-weight: 500;
-  font-size: 1.25rem;
+.featurette-image {
+  object-fit: cover;
+  object-position: 100% 0;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
 }
 
-.card-img-overlay .card-title {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.MaterialTable{
+#longPhoto{
   
-}
-
-.row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 200px;
-}
-
-.site-footer {
-  padding: 20px 0;
+  width: 400px; /* width of container */
+  height: 400px; /* height of container */
+  
 }
 
 .navbar {
   background-color: darkblue;
+  color:white;
 }
 
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.site-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.site-footer{
+  background-color: darkblue;
+  color:white;
+  padding: 20px 0;
 }

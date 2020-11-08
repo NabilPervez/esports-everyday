@@ -61,7 +61,7 @@ class About extends Component{
                         </p>
                         </div>
                         <div class="col-md-5">
-                            <img class="featurette-image img-fluid mx-auto portait" src="http://nabilpervez.com/wp-content/uploads/2020/02/Infinite_Headshots-23-s.jpg" alt="500x500"/>
+                            <img class="featurette-image img-fluid mx-auto portait" src="http://nabilpervez.com/wp-content/uploads/2020/02/Infinite_Headshots-23-s.jpg" alt="500x500" id="longPhoto"/>
                         </div>
                     </div>
                     
