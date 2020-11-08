@@ -13,49 +13,57 @@ import {
     PieChart, Pie, Sector, Cell,
   } from "recharts";
 
+
 //SAMPLE DATA TO BE CHANGED LATER
 const data = [
 {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400
+    name: "Cloud9",
+    short: "C9",
+    likes: 4000,
+    retweets: 2400,
+    tweets: 2400
 },
 {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210
+    name: "Team SoloMid",
+    short: "TSM",
+    likes: 3000,
+    retweets: 1398,
+    tweets: 2210
 },
 {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290
+    name: "100 Thieves",
+    short: "100T",
+    likes: 2000,
+    retweets: 9800,
+    tweets: 2290
 },
 {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000
+    name: "Team Liquid",
+    short: "TL",
+    likes: 2780,
+    retweets: 3908,
+    tweets: 2000
 },
 {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181
+    name: "NRG Esports",
+    short: "NRG",
+    likes: 1890,
+    retweets: 4800,
+    tweets: 2181
 },
 {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500
+    name: "Evil Genuinses",
+    short: "EG",
+    likes: 2390,
+    retweets: 3800,
+    tweets: 2500
 },
 {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100
+    name: "Faze Clan",
+    short: "Faze",
+    likes: 3490,
+    retweets: 4300,
+    tweets: 2100
 }
 ];
 
@@ -74,7 +82,7 @@ class Home extends Component {
                 Examples: http://recharts.org/en-US/examples/StraightAnglePieChart
                 */}
                 
-                <div className="container">
+                <div className="container my-4">
                     <h3>Teams Engagement Ranking</h3>
                     <BarChart
                         width={1000}
@@ -89,8 +97,8 @@ class Home extends Component {
                         <YAxis />
                         <Tooltip />
                         <Legend />
-                        <Bar dataKey="pv" fill="#8884d8" />
-                        <Bar dataKey="uv" fill="#82ca9d" />
+                        <Bar dataKey="retweets" fill="#8884d8" />
+                        <Bar dataKey="likes" fill="#82ca9d" />
                     </BarChart>
                 </div>
 
@@ -99,12 +107,12 @@ class Home extends Component {
                 Examples: http://recharts.org/en-US/examples/StraightAnglePieChart
                 */}
 
-                <div className="container">
+                <div className="container my-4">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-4">
                             <h3>Share Of Voice</h3>
                             <PieChart width={400} height={400}>
-                                <Pie dataKey="amt" startAngle={359} endAngle={0} data={data} cx={200} cy={200} outerRadius={80} fill="#8884d8" label />
+                                <Pie dataKey="likes" startAngle={359} endAngle={0} data={data} cx={200} cy={200} outerRadius={80} fill="#8884d8" label />
                             </PieChart>
                         </div>
                         <div className="col">
@@ -116,12 +124,13 @@ class Home extends Component {
                                 margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
                                 >
                                 <CartesianGrid strokeDasharray="3 3" />
-                                <XAxis dataKey="name" />
+                                <XAxis />
                                 <YAxis />
                                 <Tooltip />
                                 <Legend />
-                                <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-                                <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                                <Line type="monotone" dataKey="retweets" stroke="#8884d8" />
+                                <Line type="monotone" dataKey="likes" stroke="#82ca9d" />
+                                <Line type="monotone" dataKey="tweets" stroke="#82ca9d" />
                             </LineChart>
                         </div>
                     </div>
@@ -135,11 +144,19 @@ class Home extends Component {
                 <div className="container">
                     <h2>Top Tweets</h2>
                     <div className="row">
+                        <div class="col">
                         <TwitterTweetEmbed tweetId={'1305899181081419782'}/>
-                        <TwitterTweetEmbed tweetId={'1305899181081419782'}/>
-                        <TwitterTweetEmbed tweetId={'1305899181081419782'}/>
+                        </div>
+                        <div class="col">
+                        <TwitterTweetEmbed tweetId={'1323114712280801280'}/>
+                        </div>
+                        <div class="col">
+                        <TwitterTweetEmbed tweetId={'1324776220651905026'}/>
+                        </div>
+                        <div class="col">
+                        <TwitterTweetEmbed tweetId={'1324381207883321345'}/>
+                        </div>
                     </div>
-
                 </div>
                 
             </React.Fragment>

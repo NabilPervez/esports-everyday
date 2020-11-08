@@ -65,8 +65,6 @@ async function accessToken({oauth_token, oauth_token_secret}, verifier) {
   }
 }
 
-
-
 async function getRequest({oauth_token, oauth_token_secret}) {
   const oAuthConfig = {
     consumer_key: consumer_key,

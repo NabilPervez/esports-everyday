@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
+import Dataset from './DatasetComponent';
+import About from './AboutComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -18,6 +20,8 @@ class Main extends Component {
             <div>
                 <Header />
                 <Home />
+                <Dataset />
+                <About/ >
                 <Footer />
             </div>
         );

@@ -24,7 +24,7 @@ class Header extends Component {
             <React.Fragment>
                 <Navbar dark sticky="top" bg="dark" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="http://nabilpervez.com/wp-content/uploads/2020/02/N.png" height="30" width="30" alt="NuCamp Logo" /></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img src="http://nabilpervez.com/wp-content/uploads/2020/02/N.png" height="30" width="30" alt="Nebtune Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
@@ -34,8 +34,8 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/directory">
-                                        <i className="fa fa-list fa-lg" /> Directory
+                                    <NavLink className="nav-link" to="/dataset">
+                                        <i className="fa fa-list fa-lg" /> Dataset
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -45,7 +45,7 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/contactus">
-                                        <i className="fa fa-address-card fa-lg" /> Contact Us
+                                        <i className="fa fa-address-card fa-lg" /> Contact
                                     </NavLink>
                                 </NavItem>
                             </Nav>
