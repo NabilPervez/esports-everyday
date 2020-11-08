@@ -21,7 +21,7 @@ class Main extends Component {
                 <Header />
                 <Home />
                 <Dataset />
-                <About/ >
+                <About />
                 <Footer />
             </div>
         );
