@@ -4,6 +4,7 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Dataset from './DatasetComponent';
 import About from './AboutComponent';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 
 class Main extends Component {
@@ -16,12 +17,16 @@ class Main extends Component {
         return (
             <div>
                 <Header />
-                        <Switch>
-                            <Route path='/home' component={Home} />
-                            <Route exact path='/dataset' render={() => <Dataset />} />
-                            <Route exact path='/about' render={() => <About />} />
-                            <Redirect to='/home' />
-                        </Switch>
+                    <TransitionGroup>
+                            <CSSTransition  classNames="page">
+                            <Switch>
+                                <Route path='/home' component={Home} />
+                                <Route exact path='/dataset' render={() => <Dataset />} />
+                                <Route exact path='/about' render={() => <About />} />
+                                <Redirect to='/home' />
+                            </Switch>
+                            </CSSTransition>
+                    </TransitionGroup>
                   <Footer />
             </div>
         );
