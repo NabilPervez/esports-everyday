@@ -12,6 +12,9 @@ import {
     BarChart,
     PieChart, Pie, Sector, Cell,
   } from "recharts";
+  import { FadeTransform, Fade, Stagger } from 'react-animation-components';
+
+
 
 
 //SAMPLE DATA TO BE CHANGED LATER
@@ -83,6 +86,7 @@ class Home extends Component {
                 */}
                 
                 <div className="container my-4">
+                
                     <h3>Teams Engagement Ranking</h3>
                     <BarChart
                         width={1000}
@@ -100,6 +104,8 @@ class Home extends Component {
                         <Bar dataKey="retweets" fill="#8884d8" />
                         <Bar dataKey="likes" fill="#82ca9d" />
                     </BarChart>
+
+                    
                 </div>
 
                 {/* MIDDLE SECTION 

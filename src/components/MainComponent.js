@@ -17,14 +17,14 @@ class Main extends Component {
         return (
             <div>
                 <Header />
-                    <TransitionGroup>
-                            <CSSTransition  classNames="page">
-                            <Switch>
-                                <Route path='/home' component={Home} />
-                                <Route exact path='/dataset' render={() => <Dataset />} />
-                                <Route exact path='/about' render={() => <About />} />
-                                <Redirect to='/home' />
-                            </Switch>
+                    <TransitionGroup in>
+                            <CSSTransition in classNames="page">
+                                <Switch>
+                                    <Route path='/home' component={Home} />
+                                    <Route exact path='/dataset' render={() => <Dataset />} />
+                                    <Route exact path='/about' render={() => <About />} />
+                                    <Redirect to='/home' />
+                                </Switch>
                             </CSSTransition>
                     </TransitionGroup>
                   <Footer />
